@@ -1,4 +1,8 @@
 #include "String.hh"
+#include <stdint.h>
+#include <iostream>
+#include <algorithm>
+
 
 String::String():len(0), s(nullptr){}
 
@@ -33,7 +37,7 @@ String::String(const String& orig):len(orig.len),s(new char[len]){
 String& String::operator =(const String& orig) {
     String copy(orig);//copy here is the variable name
     len=orig.len;
-    swap(s,copy.s);
+    std::swap(s,copy.s);
     return *this;
 }
 
@@ -79,14 +83,14 @@ String String::insert(uint32_t num, const String& add){
     return *this;
 }
 
-friend String String::operator + (String&a, const String&b){
+String operator + (String&a, const String&b){
     a.len=a.len+b.len;
     for(uint32_t i=a.len-b.len;i<a.len;i++)
 	a.s[i]=b.s[i-a.len+b.len];
     return a;
 }
 
-friend ostream& operator<<(ostream& s, const String& str) {
+std::ostream& operator<<(std::ostream& s, const String& str) {
     for(uint32_t i=0;i<str.len;i++) {
         s<<str[i];
     }
