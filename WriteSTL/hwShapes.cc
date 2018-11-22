@@ -20,4 +20,5 @@ int main() {
 	Cylinder cyl(r, height);
 	d.add(c);
 	d.write("test.stl");
+	d.add(cyl);
 }
