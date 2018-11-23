@@ -129,8 +129,8 @@ int main() {
     Color BLACK(0,0,0);
 
 
-    //b.line(0,0,   19,19, RED);
-    //b.line(0,5,   29,10, BLUE); //Bresenham algorithm
+    b.line(0,0,   19,19, RED);
+    b.line(0,5,   29,10, BLUE); //Bresenham algorithm
     //https://en.wikipedia.org/wiki/Bresenham's_line_algorithm
 
     // https://en.wikipedia.org/wiki/Xiaolin_Wu%27s_line_algorithm
