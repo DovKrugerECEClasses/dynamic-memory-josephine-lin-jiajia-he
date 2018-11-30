@@ -1,3 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+template <typename T>
+
+inline void sort(T x[], int size) {
+    for (int i = 0; i < size - 2; i++)
+        for (int j = 0; j < size - 1; j++)
+            if (x[j] > x[j + 1])
+                swap(x[j], x[j + 1]);
+}
+
+template <typename T>
+void print(T x[], int size){
+    for(int i = 0; i < size; i++){
+        cout << x[i] << ' ';
+    }
+}
+
+template <typename T>
+T sum(T x[], int size){
+    T sum = 0;
+    for(int i=0; i < size; i++){
+        sum+= x[i];
+    }
+    return sum;
+
+}
 
 
 int main() {
