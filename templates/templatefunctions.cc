@@ -20,7 +20,7 @@ void print(T x[], int size){
 
 template <typename T>
 T sum(T x[], int size){
-    T sum = 0;
+    T sum;
     for(int i=0; i < size; i++){
         sum+= x[i];
     }
