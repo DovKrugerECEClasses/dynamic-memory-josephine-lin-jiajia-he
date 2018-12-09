@@ -44,5 +44,5 @@ int main() {
 	string c[] = {"yo", "ho", "test", "foo", "bar"};
 	sort(c, sizeof(c)/sizeof(string));
 	print(c, sizeof(c)/sizeof(string));
-	//TODO?	cout << sum(c, sizeof(c)/sizeof(string)) << '\n';
+	cout << sum(c, sizeof(c)/sizeof(string)) << '\n';
 }
