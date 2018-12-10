@@ -5,7 +5,6 @@
 #ifndef COLOR_H
 #define COLOR_H
 
-#endif
 class Color {
 private:
     uint32_t rgba;
@@ -19,4 +18,4 @@ public:
         return rgba;
     }
 };
-
+#endif
