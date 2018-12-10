@@ -2,11 +2,10 @@
 // Created by Jacklyn He on 2018/11/15.
 //
 
-#ifndef TEST_COLOR_H
-#define TEST_COLOR_H
+#ifndef COLOR_H
+#define COLOR_H
 
-#endif //TEST_COLOR_H
-
+#endif
 class Color {
 private:
     uint32_t rgba;
@@ -20,3 +19,4 @@ public:
         return rgba;
     }
 };
+

@@ -4,7 +4,7 @@
  */
 
 #include <iostream>
-#include "Color.h"
+#include "Color.hh"
 #include <iomanip>
 #include <cmath>
 #include <stdint.h>
